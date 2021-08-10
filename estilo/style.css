@@ -1,0 +1,424 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #BBB;
+    padding: 20px 0;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.829);
+    
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold; /* Negrito */
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #604132;
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1em; /* Margin para baixo */ 
+}
+
+.titulo-principal:first-letter {
+    color: #604132;
+}
+
+.tesoura {
+    width: 10rem;
+    margin: 0 0 1rem 41.5%;
+}
+
+.tesoura:hover {
+    transform: rotate(30deg);
+}
+
+.utensilios {
+    width: 140px;
+    float: left;
+    margin-right: 0.7rem;
+    border-radius: 90px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.671);
+}
+
+.principal p {
+    margin: 0 0 1em;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2em;
+}
+
+.missao {
+    font-size: 1.3rem;
+}
+
+.missao em strong {
+    color: #604132;
+}
+
+.missao em strong:hover {
+    color: #302018;
+    font-size: 1.4rem;
+}
+
+.div-mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa {
+    padding: 3rem 0;
+    background: linear-gradient(#FEFEFE,  #888888);
+}
+
+.mapa p {
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 2rem;
+    background: #888888;
+}
+
+.div-beneficios {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-beneficios {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 2.5rem 0;
+    color: #604132;
+    clear: left;
+}
+
+.itens {
+    margin-top: 7px;
+    font-size: 1.3rem;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:hover {
+    font-size: 1.4rem;
+    color: #604132;
+}
+
+.itens:before {
+    content: "♠"
+}
+
+.lista-beneficios {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-left: 10%;
+    line-height: 2em;
+}
+
+.imagem-beneficios {
+    width: 40%;
+    border-radius: 30px;
+    margin: 0 30px 15px 30px;
+    border: 2px solid #604132;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.671); /* Eixo X, Eixo Y, Blur, espalhamento, Cor */
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+footer {
+    text-align: center;
+    background: url('../imagens/bg.jpg');
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/* -------------------- PRODUTOS -------------------------  */
+
+.produtos {
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top; /* Alinhando pelo topo (padrão é por baixo) */
+    margin: 0 1.5%;
+    padding: 2rem 1rem;
+    box-sizing: border-box; /* Considera o width antes de aplicar o padding */
+    border: 2px solid #000; /* tamanho - tipo - cor */
+    border-radius: 8%;
+}
+
+.produtos li:hover {
+    border-color: #c78c19;
+}
+
+.produtos li:active {
+    border-color: #088c19;
+}
+
+.produtos h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.produtos li:hover h2 {
+    font-size: 1.7rem;
+    color: #604132;
+}
+
+.produto-descricao {
+    font-size: 1.18rem;
+}
+
+.produto-preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 8%;
+}
+
+/* ------------------------ FORMULÁRIO ------------------------ */
+
+.form-main, .produtos-main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 4rem 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 1.3rem;
+    margin: 0 0 1rem;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#msg {
+    font-size: 0.75rem;
+    margin-left: 16.5rem;
+}
+
+.fa-user, .fa-at, .fa-phone-alt {
+    color: gray;
+}
+
+.fa-whatsapp {
+    margin-left: 20px;
+    color: darkgreen;
+}
+
+.fa-mobile-alt {
+    margin-left: 47px;
+}
+
+.fa-envelope {
+    margin-left: 71px;  
+    color: darkblue
+}
+
+.checkbox {
+    margin: 1.1rem 5px;
+}
+
+.field-radios, .field-select {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.field-select select {
+    font-size: 1rem;
+}
+
+.enviar {
+    width: 20%;
+    padding: 15px 0;
+    background: rgb(19, 123, 207);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    transition: 1s all; /* delay na transição dos elementos do botão */
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(6, 57, 99);
+    transform: scale(1.2); /* Elemento aumenta em 20% */
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555;
+    color: #FFF;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .div-beneficios, .div-mapa, .video, .form-main, .produtos-main {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    header {
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.829);
+    }
+
+    nav {
+        position: static;
+        margin: auto;
+    }
+
+    .pipe, .banner {
+        display: none;
+    }
+
+    .tesoura {
+        margin: 0 0 7% 30%;
+    }
+
+    .mapa {
+        margin: 0 auto;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+/*-------------------------- Produtos --------------------------*/
+    .produtos {
+        padding: 1rem;
+    }
+
+    .produtos li {
+        width: 85%;
+        display: block;
+        margin: 5% auto;
+    }
+
+/*-------------------------- Contatos --------------------------*/
+
+    form {
+        margin: 1rem 3%;
+    }
+
+    .input-padrao {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    form label, form legend {
+        font-size: 1.2rem;
+    }
+
+    .fa-user, .fa-at, .fa-phone-alt {
+        margin-left: 3%;
+    }
+
+    .field-select, .checkbox {
+        text-align: center;
+    }
+
+    .checkbox {
+        margin: 1rem 0.5rem;
+        margin-bottom: 3%;
+    }
+
+    #msg {
+        margin-left: 6rem;
+    }
+
+    .enviar {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .enviar:hover {
+        transform: none
+    }
+
+    table {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+}

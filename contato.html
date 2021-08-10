@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Limpando CSS -->
+        <link rel="stylesheet" href="./estilo/reset.css">
+        <!-- Meu estilo -->
+        <link rel="stylesheet" href="./estilo/style.css">
+        <title>Contato - Barbearia Alura</title>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!-- Icones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="./imagens/logo.png" alt="logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="pipe">|</li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li class="pipe">|</li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="form-main">
+            <form>
+                <label for="nome"><i class="fas fa-user"></i> Nome e sobrenome</label>
+                <input type="text" id="nome" class="input-padrao" required>
+
+                <label for="email"><i class="fas fa-at"></i> Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone"><i class="fas fa-phone-alt"></i> Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem <span id="msg">Minimo 30 caracteres</span></label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                
+                <fieldset class="field-radios"> <!-- fieldset (seria uma <div> para formulários) neste caso agrupando tudo que for do tipo 'radio' --> 
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email">Email<i class="far fa-envelope"></i></label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone<i class="fas fa-mobile-alt"></i></label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp <i class="fab fa-whatsapp"></i></label> 
+                </fieldset>
+
+                <fieldset class="field-select"> <!-- Select -->
+                    <legend>Qual horario prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label><input class="checkbox" type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+                <button class="enviar" data-button-enviar>Enviar formulário</button>
+
+            </form>
+
+            <table>
+                <thead> <!-- Cabeçalho da tabela -->
+                    <tr> 
+                        <th>Dia</th> <!-- coluna do cabeçalho -->
+                        <th>Horario</th>
+                    </tr> 
+                </thead>
+                <tbody>  <!-- corpo da tabela -->
+                    <tr> <!-- LINHA -->
+                        <td>Segunda</td> <!-- COLUNA -->
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h~20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="./imagens/logo-branco.png" alt="logo da Barbearia Alura">
+            <p class="copyright"> &copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
+
+        <script src="./script/contato.js"></script>
+    </body>
+</html>
